@@ -1,0 +1,42 @@
+import java.util.ArrayList;
+
+class Playlist {
+  
+  public static void main(String[] args) {
+
+    ArrayList<String> desertIslandPlaylist = new ArrayList<String>();
+
+      desertIslandPlaylist.add("I wanna Rock");
+      desertIslandPlaylist.add("One More Time");
+      desertIslandPlaylist.add("Smell like Teen Spirit");
+      desertIslandPlaylist.add("Dani California");
+      desertIslandPlaylist.add("Titanium");
+      desertIslandPlaylist.add("TNT");
+      desertIslandPlaylist.add("Engel");
+      desertIslandPlaylist.add("Ein mal um die welt");
+
+      System.out.println(desertIslandPlaylist);
+      System.out.println(desertIslandPlaylist.size());
+      desertIslandPlaylist.remove(0);
+      System.out.println(desertIslandPlaylist.size());
+      desertIslandPlaylist.remove(6);
+      System.out.println(desertIslandPlaylist.size());
+      desertIslandPlaylist.remove("TNT");
+      System.out.println(desertIslandPlaylist.size());
+      System.out.println(desertIslandPlaylist);
+
+      
+      int indexA = desertIslandPlaylist.indexOf("One More Time");
+      int indexB = desertIslandPlaylist.indexOf("Engel");
+      
+      String TempA = "One More Time";
+      String TempB = "Engel";
+
+      desertIslandPlaylist.set(indexA,TempB);
+      desertIslandPlaylist.set(indexB,TempA);
+
+      System.out.println(desertIslandPlaylist);
+    
+  }
+  
+}
